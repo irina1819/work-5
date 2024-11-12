@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+   
+<div class="bg-image" style="background-image: url('images/main_backgr.png');"> </div> <!-- Background1-->
+<div class="margin">
+   
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+           
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="sponsors.html">Our Sponsors</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex" style="gap: 10%;">
+                        <a class="nav-link" href="#" aria-label="Notifications">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                            </svg>
+                        </a>
+                        <a class="nav-link" href="#" aria-label="Settings">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                            </svg>
+                        </a>
+                        <a class="nav-link" href="registration.html" aria-label="Account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+<div class="container my-5 text-center" style="padding-top: 10%;">
+    <h1 class="display-6 fw-bold" style="font-family:'Alfa Slab One'; letter-spacing: 0.1em;">BE BETTER THAN <br>YESTERDAY!</h1>
+    <p class="lead mt-3">Empowering young men and women to become the best versions of themselves <br> Basketball for all ages in Vaughan, Maple, Thornhill and Richmond Hill</p>
+    <a href="registration.html"><button type="button" class="btn btn-primary" style="border-radius: 0; margin-right: 2%;">Sign Up Now →</button></a>
+    <a href="#1"><button type="button" class="btn btn-secondary bg-transparent" style="border-radius: 0; border-color: white;">Contact Us</button></a>
+</div>
+
+</div> <!-- Margin-->
+
+<div class="bg-color"> 
+
+
+<br><br>
+<h6 style="text-align: center; color: #0E7DB9;">CAPTION</h6>
+<h4 style="text-align: center; color: black; ">Our programs</h4>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="summer-camps-tab" data-bs-toggle="tab" href="#summer-camps" role="tab" aria-controls="home" aria-selected="true">Summer Camps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="training-camp-tab" data-bs-toggle="tab" href="#training-camp" role="tab" aria-controls="profile" aria-selected="false">Training Camp</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent" style="border-color: black;">
+                
+                <div class="tab-pane fade show active" id="summer-camps" role="tabpanel" aria-labelledby="summer-camps-tab" style="background-color: white;" >
+                    <div class="border">
+                    <img src="images/program1.png" alt="Summer Camps Image" class="img-fluid rounded mb-3" style="width: 100%;"/>
+                    <h5 style="color: black; padding-left:2%;"> <span style="color:#0E7DB9 ;"> Ages 4 - 13</span><br/>2023 GTA Mavericks Summer Camps</h5>
+                    <p style="color: black;padding-left:2%;">GTA Mavericks Basketball Association is passionately dedicated to inspiring and empowering players and athletes, both male and female.</p>
+                    <button type="button" class="btn btn-primary" style="margin-left:2%; margin-bottom: 2%;">More Info →</button>
+                </div>
+                </div>
+            
+                <div class="tab-pane fade" id="training-camp" role="tabpanel" aria-labelledby="training-camp-tab"  style="background-color: white;">
+                    <div class="border">
+                    <img src="images/program2.png" alt="Training Camp Image" class="img-fluid rounded mb-3" style="width: 100%;" />
+                    <h5 style="color: black; padding-left:2%;"><span style="color:#0E7DB9 ;"> Ages 4 - 13</span> <br/>Mavericks Elite Summer Training Camp 2023</h5>
+                    <p style="color: black; padding-left:2%;">Seize the chance to unlock your full potential with the Mavericks Elite Basketball Academy, and witness as a passion ignites a life-changing journey!</p>
+                    <button type="button" class="btn btn-primary" style="margin-left:2%; margin-bottom: 2%;">More Info →</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="block" style="background-color: #0B2A46;">
+    <br>
+    <div class="container">
+        <div class="row">
+            <h6 style="text-align: center; color: #0E7DB9;">CAPTION</h6>
+            <h1 class="section-header" style="color: white;">Why are we here?</h1>
+        </div>
+        <div class="row align-items-center" >
+            <div class="col-12 col-md-9">
+                <div class="row" >
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/basketball.png" style="width: 7%;"> <br> </img> GET SKILLED</h4>
+                                <p class="card-text feature-text" style="color: rgb(204, 204, 204);">With our high-level coaches and exceptional drills, we take skill development seriously. We transform kids into athletes who are ready to play at an elite level.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/brain.png" style="width: 7%;"> <br> </img> BE MENTALLY STRONG</h2>
+                                    <p class="card-text feature-text" style="color:  rgb(204, 204, 204);">Basketball requires more than just athletic talent and healthy mind. Our strong and healthy mind allows us to work hard through game day itself, helping create meaningful connections while they grow.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/list.png" style="width: 7%;"> <br> </img> STAY HEALTHY</h2>
+                                    <p class="card-text feature-text" style="color:  rgb(204, 204, 204);">We stress the importance of a healthy lifestyle on and off the court. Throughout their time with us, everyone tests their endurance and conditioning from week to week, staying in good shape year-round.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/time.png" style="width: 7%;"> <br> </img> STAY ORGANIZED</h2>
+                                    <p class="card-text feature-text" style="color:  rgb(204, 204, 204);">We stress proper time management here at the Maveericks. School is its own priority if basketball ever starts to worry you about school grades, we will not let you play.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/people.png" style="width: 7%;"> <br> </img> BE A TEAM PLAYER</h2>
+                                    <p class="card-text feature-text" style="color:  rgb(204, 204, 204);">On the court and in life, you must rely on teamwork to be successful. To achieve this goal, we learn the importance of basketball fundamentals and foster meaningful connections with each other throughout practice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="color: white;"><img src="images/basketball.png" style="width: 7%;"> <br> </img> GET COMPETITIVE</h4>
+                                <p class="card-text feature-text" style="color:  rgb(204, 204, 204);">We create an age-appropriate competitive environment so that all athletes have a chance to play. This allows for everyone to test their newfound skills and improve their playing style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="images/twoboys.png" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+    <br>
+</div>  <br>
+
+<br>
+
+
+
+
+  <div id="carouselExampleControls" class="carousel slide w-100 mx-auto position-relative" data-bs-ride="carousel" style="background-color: #f8f6f6;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+            <div class="content" style="background-color: #e3e3e3; margin-left: 15%; margin-right: 15%;">
+                    <span class="d-block fs-7 text-primary me-2" style=" text-align: center;">
+                    
+                        <br>
+                        <img src="images/zoomer.png"><br>
+                        <p  style=" color:gray">Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu.<br>Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.. <br><br></p>
+                        <img src="images/User Thumb.png">
+                        <br><br><h6 style=" color:gray"> Author Name</h6>
+                        <p style="margin-top: -1%; color:gray"> Role</p><br>
+                    </span>
+            </div>
+        
+        </div>
+        <div class="carousel-item">
+            <div class="content" style="background-color: #e3e3e3; margin-left: 15%; margin-right: 15%;">
+                    <span class="d-block fs-7 text-primary me-2" style=" text-align: center;">
+                        <br>
+                        <img src="images/zoomer.png"><br>
+                        <p  style=" color:gray">Nisl vitae viverra dignissim nibh. Nibh imperdiet integer vitae consequat adipiscing pellentesque. <br> Sed amet tincidunt morbi non sed donec mollis pharetra neque.<br><br></p>
+                        <img src="images/User Thumb.png">
+                        <br><br><h6 style=" color:gray"> Author Name</h6>
+                        <p style="margin-top: -1%; color:gray"> Role</p><br>
+                    </span>
+                
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" 
+         type="button" 
+         data-bs-target="#carouselExampleControls"
+     data-bs-slide="prev">
+     <img src="images/buttomn-left.png" style="width: 50px;" alt="Previous" class="control-button" />
+     <span class="visually-hidden">
+         Previous
+     </span>
+ </button>
+ <button class="carousel-control-next" 
+         type="button" 
+         data-bs-target="#carouselExampleControls"
+         data-bs-slide="next">
+         <img src="images/buttomn-right.png" style="width: 50px;" alt="Next" class="control-button" />
+
+     <span class="visually-hidden">
+         Next
+     </span>
+ </button>
+</div>
+</div>
+
+<br><br>
+
+
+
+
+
+
+<div class="block" style="background-color: #0B2A46;">
+    <br><br>
+    <div class="container">
+       
+        <div class="row " >
+            <div class="col-12 col-md-9">
+                <div class="row" >
+                    <div class="col-12 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 style="color: #0E7DB9;">CAPTION</h6>
+                                <h1  style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                    Bibendum amet at molestie mattis.</h1> <br>
+                    
+                                <p class="card-text feature-text" style="color: rgb(204, 204, 204);">Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut. Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies purus iaculis.</p>
+                                <br>
+                                <button type="button" class="btn btn-primary" style="border-radius: 0;">Primary Action</button>
+                                <button type="button" class="btn btn-secondary bg-transparent" style="border-radius: 0; border-color: #0E7DB9; color: #0E7DB9;">Secondary Action</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="images/boybascet.png" alt="" class="w-100" >
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>  <br>
+
+<br>
+
+
+
+<footer class="footer-06">
+    <div class="container">
+        <div class="row align-items-center align-items-stretch mb-5">
+            <div class="col-md-4 py-4 py-md-5 aside-stretch d-flex align-items-center">
+                <div class="w-100">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Logo"> 
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 py-4 py-md-5 d-flex align-items-center pl-md-5 aside-stretch-right">
+                <form action="#" class="subscribe-form w-100">
+      <div class="form-group d-flex" >
+        <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+        <button type="submit" class="form-control submit"><span>Submit</span></button>
+      </div>
+    </form>
+   
+            </div>
+        </div>
+        <hr>
+        <div class="row pt-4">
+            <div class="col-md-3 col-lg-6 order-md-last">
+                <div class="row justify-content-end">
+                    <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                        <h2 class="footer-heading"><a href="#" class="logo">Join Us</a></h2>
+                        <img src="images/Social Icons.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-6">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Column One</h2>
+                        <ul class="list-unstyled">
+              <li><a href="#" id="1" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Twenty One</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Twenty One</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Twenty One</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Twenty One</a></li>
+            </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Column Two</h2>
+                        <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Sixty Five</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Sixty Five</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Sixty Five</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>Sixty Five</a></li>
+            </ul>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Column Three</h2>
+                        <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>One Two</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>One Two</a></li>
+              <li><a href="#" class="py-1 d-block"><span class="ion-ios-checkmark-circle-outline mr-2"></span>One Two</a></li>
+            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+<div class="autor-riles">
+    <br><br><p>CompanyName @ 202X. All rights reserved.</p><br>
+    
+</div>
+    </div>
+</footer>
+
+
+
+  
+
+
+
+
+</div> <!-- bg-color-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
